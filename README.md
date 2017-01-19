@@ -1,6 +1,9 @@
 target OS: isoft 4.0
+
 attack OS: kali
+
 attack tools: arpspoof/ettercap/driftnet/tcpdump/ferret/hamster/sslstrip/
+
 
 **`文中所涉及工具和技术，只用于理论研究，务必不要用于非法用途`**
 **`务必不要在生产环境中进行模拟，文中演示的被攻击主机和网站账号，均为自己所有`**
@@ -53,7 +56,7 @@ arp针对的是OSI网络模型的下三层，这就使得它的攻击范围局�
 ![已经断网][6]
 
 #### 嗅探图片和密码
-和断网的区别是，嗅探首先要确保网络通畅，应该把劫持到的流量发往正确的方向，所以首先打开ip转发：
+和断网的区别是，嗅探首先要确保网络通畅，应该把劫持到的流量发往正确的方向，所以首先打开ip转发
 ![ip转发][7]
 再次用arpspoof发起arp毒化，这次isoft可以正常上网了
 现在开始利用driftnet嗅探图片：
@@ -84,18 +87,7 @@ ok，密码到手，用户名admin，密码passw0rd
 ![gmail][17]
 干的漂亮！会话劫持成功，无须对方的密码，即可登录对方的工作邮箱，并任意查看，发送邮件给其他人。
 经试验，此功能对于腾讯，百度等众多大公司服务器均适用
-/
-/
-/
-/
-/
-/
-/
-/
-/
-/
-/
-/
+
 
   [1]: http://www.harmonysecurity.com/files/HS-P004_ARPPoisoning.pdf
   [2]: http://antig.pub/usr/uploads/2017/01/1785050957.png
